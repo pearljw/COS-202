@@ -1,2 +1,2 @@
-# OOP-Project
-COS 204 class
+# OOP-Class
+COS 202 class

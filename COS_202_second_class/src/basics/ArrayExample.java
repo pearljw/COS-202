@@ -36,6 +36,15 @@ public class ArrayExample{
         sum += myArray[i];
         System.out.println(sum);
 
+         try {
+            anotherArray[i] = input.nextInt();
+        }catch (InputMismatchException inputMismatchException) {
+            System.out.println("Enter only numbers");
+        }catch (ArrayIndexOutOfBoundsException arrayOutOBound){
+            System.out.println("Too many inputs into the array");
+        }catch (Exception exception) {
+            System.out.println("Something unexpected");
+        }
     }
 }
 

@@ -5,6 +5,37 @@ public class ArrayExample{
         int[] myArray = {1,3,5,7,9};
         int[] anotherArray = new int[10];
         String[] gender = {"Female", "Male"};
+
+
+    // To change the value of 3 to 13, we can do this
+        myArray[1] = 13;
+        myArray[3] = 13;
+        anotherArray[5] = 17;
+
+        // or we could use a for loop to collect the numbers
+        for(int i = 0; i < anotherArray.length; i++) {
+            System.out.println("Insert Item at: "+i);
+            anotherArray[i] = input.nextInt();
+        }
+
+        for (int i = 0; i < anotherArray.length; i++) {
+            if (anotherArray[i] == 13){
+                System.out.println("Found it");
+                break;
+            }
+        }
+
+        for (int i = 0; i < myArray.length; i++) {
+            System.out.println("Item at: "+i+ " is " +myArray[i]);
+            anotherArray[i] = input.nextInt();
+        }
+
+        int sum = 0;
+        for (int i = 0; i < myArray.length; i++);
+        int i = 0;
+        sum += myArray[i];
+        System.out.println(sum);
+
     }
 }
 

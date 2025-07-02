@@ -1,28 +1,34 @@
-public abstract class User implements Authenticate {
+public abstract class User implements Authenticable {
     private String email;
     private String password;
 
-    @Override
-    public boolean authenticate(String email, String) {
-        return  false;
+    public User() {
     }
-  @Override
-  public String otp(){
-        return  null;
-  }
+
+    public boolean authenticate() {
+        return false;
+    }
+
+    public String otp() {
+        return "";
+    }
+
+    public String passkey() {
+        return "";
+    }
+
     public String getEmail() {
-        return email;
+        return this.email;
     }
 
     public void setEmail(String email) {
         this.email = email;
-
     }
 
-//    public String getPassword() {
-//        return password;
-//    }
-//Setting the password but not viewing
+    public String getPassword() {
+        return this.password;
+    }
+
     public void setPassword(String password) {
         this.password = password;
     }
